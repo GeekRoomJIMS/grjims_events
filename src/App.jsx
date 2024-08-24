@@ -5,16 +5,11 @@ import DayThree from "./pages/DayThree";
 import DayFour from "./pages/DayFour";
 import NotFoundPage from "./pages/NotFoundPage";
 import Navbar from "./pages/Navbar";
-import Schedule from "./pages/Schedule";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Navbar />,
-  },
-  {
-    path: "/",
-    element: <Schedule />,
   },
   {
     path: "/day-one",
