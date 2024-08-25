@@ -4,7 +4,8 @@ import DayTwo from "./pages/DayTwo";
 import DayThree from "./pages/DayThree";
 import DayFour from "./pages/DayFour";
 import NotFoundPage from "./pages/NotFoundPage";
-import Home from "./pages/Home";
+// import Navbar from "./pages/Navbar";
+import Home from './pages/Home'
 
 const router = createBrowserRouter([
   {
