@@ -299,4 +299,4 @@ const Quizitte = () => {
 };
 
 export default Quizitte;
-
+  

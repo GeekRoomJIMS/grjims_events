@@ -1,0 +1,87 @@
+.landing-page {
+    min-height: auto;
+    color: white;
+    margin-top: -80px;
+  }
+  
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    max-width: auto;
+    margin: 0 auto;
+  }
+  
+  .content {
+    margin-top: 130px;
+    margin-bottom: auto;
+    font-family: Audiowide;
+    margin-left: 120px;
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .h1 {
+    font-size: 3.2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .shop-now {
+    background-color: #11ccf5;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .shop-now:hover{
+    box-shadow: 0 10px 20px #11ccf5;
+  }
+
+  .image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 120px;
+    margin-top: 100px;
+    align-items: center;
+  }
+
+  @media (max-width: 768px){
+    main {
+        flex-direction: column;
+        text-align: center;
+        margin-top: -120px;
+      }
+    
+      .content {
+        max-width: 100%;
+        text-align: center;
+        margin-left: 0;
+        margin-bottom: 2rem;
+      }
+  
+      .h1{
+        font-size: 3rem;
+      }
+  
+      p{
+        font-size: 2rem;
+      }
+    
+      .image-container {
+        justify-content: center;
+        margin-right: 0;
+        margin-top: 0;
+      }
+  }

@@ -1,0 +1,126 @@
+.prizes-container {
+    color: white;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px;
+}
+
+.prizes-title {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right,
+            #11ccf5,
+            #ff3d5f,
+            #c2d4e6);
+    text-align: center;
+    font-weight: 600;
+    font-family: Audiowide;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.prizes-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.prize-item {
+    background-color: #11ccf5;
+    border: 10px solid #00bbe6;
+    height: auto;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    z-index: 1;
+}
+
+.prize-item h3 {
+    color: black;
+    font-weight: bold;
+    height: auto;
+    font-size: 24px;
+    margin-bottom: 10px;
+    background-color: #11ccf5;
+}
+
+.prize-item p {
+    color: black;
+    font-size: 18px;
+    margin: 5px 0;
+    background-color: #11ccf5;
+}
+
+.main-prize {
+    grid-column: span 2;
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+}
+
+.prize-item:hover {
+    transform: translateY(-5px);
+}
+
+.goodies-info {
+    /* text-align: center;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 500px;
+    align-items: center;
+    justify-content: center;
+    background-color: #11ccf5;
+    border: 10px solid #00bbe6;
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-radius: 10px; */
+    text-align: center;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 500px;
+    background-color: #11ccf5;
+    border: 10px solid #00bbe6;
+    padding: 10px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.goodies-info:hover {
+    transform: translateY(-5px);
+}
+
+.goodies-info p {
+    color: black;
+    font-size: 18px;
+    background-color: #11ccf5;
+}
+
+.goodies-info span {
+    font-weight: bold;
+    color: black;
+    background-color: #11ccf5;
+}
+
+@media (max-width: 768px) {
+    .prizes-container {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .prizes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .main-prize {
+        grid-column: span 1;
+    }
+}

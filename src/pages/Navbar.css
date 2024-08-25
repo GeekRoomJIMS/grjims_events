@@ -1,0 +1,102 @@
+.Navbar {
+    color: white;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  nav {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  nav a {
+    color: white;
+    font-family: Audiowide;
+    text-decoration: none;
+  }
+  
+  .faq-button {
+    background-color: #11ccf5;
+    font-family: Audiowide;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+  }
+  
+  .menu-icon {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    background: #000306;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .menu-icon span {
+    width: 2rem;
+    height: 0.25rem;
+    background: white;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+  }
+  
+  @media (max-width: 768px) {
+    .menu-icon {
+      display: flex;
+    }
+  
+    nav {
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100vh;
+      width: 300px;
+      flex-direction: column;
+      background-color: #000306;
+      padding-top: 3.5rem;
+      transition: transform 0.3s ease-in-out;
+      transform: translateX(100%);
+      justify-content: start;
+      align-items: start;
+    }
+  
+    nav.open {
+      transform: translateX(0);
+    }
+  
+    nav a {
+      padding: 1rem 2rem;
+      width: 100%; /* Ensure links take up the full width of the nav for easier clicking */
+    }
+  
+    .faq-button {
+      margin-left: 2rem; /* Indent the FAQ button for consistency */
+    }
+  
+    .menu-icon.open span:nth-child(1) {
+      transform: rotate(45deg);
+    }
+  
+    .menu-icon.open span:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .menu-icon.open span:nth-child(3) {
+      transform: rotate(-45deg);
+    }
+}
