@@ -1,0 +1,76 @@
+.tracks-container {
+  padding: 40px 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.tracks-title {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right,
+      #11ccf5,
+      #ff3d5f,
+      #c2d4e6);
+  text-align: center;
+  font-weight: 600;
+  font-family: Audiowide;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.tracks-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.track-item {
+  background-color: #0a0a15;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 56px 12px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.track-item:hover {
+  transform: scale(1.05);
+
+}
+
+.track-item img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.track-item p {
+  color: white;
+  font-size: 18px;
+  margin: 0;
+}
+
+@media (max-width: 480px) {
+  .tracks-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .tracks-container {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .tracks-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
