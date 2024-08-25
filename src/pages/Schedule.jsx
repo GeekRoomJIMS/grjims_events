@@ -1,6 +1,7 @@
 import "./Schedule.css";
 import React, { useEffect } from "react";
 
+
 const Schedule = () => {
   useEffect(() => {
     const callback = (entries) => {
@@ -44,15 +45,14 @@ const Schedule = () => {
               <h2 className="date">
 
                 <div>
+
                   25th August 2024 
                 </div>
 
               </h2>
 
               <h2 
-              className="container-title">
-                Refistration Start
-              </h2>
+              className="container-title">Registration Start</h2>
               
               <span className="circle"></span>
             </div>
@@ -62,23 +62,21 @@ const Schedule = () => {
               <h1 className="date">
                 <div>
                   5th September 2024 
-                  
-                </div>
+                  </div>
               </h1>
-              
               <span className="circle"></span>
             </div>
+
             <div className="container " style={{width:"45%"}}>
               <h1 className="date">
                 <div>
                   8th September 2024
                 </div>
               </h1>
-              <h2 className="container-title">Judges Reveal for Hack Vortex</h2>
-              
-
+              <h2 className="container-title">Judges Reveal for Hack Vortex</h2>         
               <span className="circle"></span>
             </div>
+
             <div className="container " style={{width:"45%"}}>
               <h2 className="container-title">Registration Close</h2>
               <h1 className="date">
@@ -89,6 +87,7 @@ const Schedule = () => {
               
               <span className="circle"></span>
             </div>
+
 
             <div className="container" id="timeline-container" style={{width:"45%"}}>
               <h2 className="date">
@@ -101,6 +100,7 @@ const Schedule = () => {
               <span className="circle"></span>
             </div>
 
+
             <div className="container " style={{width:"45%"}}>
               <h2 className="container-title">Tech Quizitte</h2>
               <h1 className="date">
@@ -111,6 +111,7 @@ const Schedule = () => {
               
               <span className="circle"></span>
             </div>
+
 
             <div className="container " style={{width:"45%"}}>
               <h1 className="date">
@@ -139,6 +140,7 @@ const Schedule = () => {
       </div>
       <div className="mainSchedule" id="schedule">
       <div className="parent-schedule-mobile">
+
         <h1 className="timeh1">TimeLine</h1>
           <div className="schedule-title-mobile">
             {/* <img src="/images/rrr.webp" alt="arrow-logo" /> */}
@@ -148,6 +150,7 @@ const Schedule = () => {
             <div className="container-mobile" id="timeline-container">
               <h2 className="date-mobile">
                 <div>
+
                   25th August 2024
                  
                 </div>
@@ -157,10 +160,12 @@ const Schedule = () => {
               <span className="circle-mobile"></span>
             </div>
             <div className="container-mobile ">
+
               <h2 className="container-title-mobile">Acceptance mail to participants</h2>
               <h1 className="date-mobile">
                 <div>
                   5th september 2024
+
                   
                 </div>
               </h1>
@@ -170,15 +175,18 @@ const Schedule = () => {
             <div className="container-mobile ">
               <h1 className="date-mobile">
                 <div>
+
                   8th Semptember 2024
                 </div>
               </h1>
               <h2 className="container-title-mobile">Judges Reveal for hack vortex</h2>
+
               
 
               <span className="circle-mobile"></span>
             </div>
             <div className="container-mobile ">
+
               <h2 className="container-title-mobile">Registration Close</h2>
               <h1 className="date-mobile">
                 <div>
@@ -188,6 +196,7 @@ const Schedule = () => {
               
               <span className="circle-mobile"></span>
             </div>
+
           
             <div className="container-mobile" id="timeline-container-mobile">
               <h2 className="date-mobile">
@@ -200,10 +209,12 @@ const Schedule = () => {
               <span className="circle-mobile"></span>
             </div>
             <div className="container-mobile ">
+
               <h2 className="container-title-mobile">Tech Quizitte</h2>
               <h1 className="date-mobile">
                 <div>
                 26th september 2024
+
                 </div>
               </h1>
               
@@ -212,21 +223,26 @@ const Schedule = () => {
             <div className="container-mobile ">
               <h1 className="date-mobile">
                 <div>
+
                 27th september 2024    
+\
                 </div>
                 <div></div>
 
               </h1>
+
               <h2 className="container-title-mobile">algo hunts</h2>
               
 
               <span className="circle-mobile"></span>
             </div>
             <div className="container-mobile ">
+
               <h2 className="container-title-mobile">kaggle day</h2>
               <h1 className="date-mobile">
                 <div>
                 28th september 2024
+
                   
                 </div>
               </h1>
@@ -237,6 +253,7 @@ const Schedule = () => {
             
           </div>
         </div>
+
       
         {/* <div className="parent-schedule-mobile">
           <div className="schedule-title-mobile">
@@ -372,5 +389,6 @@ const Schedule = () => {
     </React.Fragment>
   );
 };
+
 
 export default Schedule;
