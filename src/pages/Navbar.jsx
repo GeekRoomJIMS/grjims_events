@@ -1,18 +1,22 @@
+
 import React, {useState} from 'react'
 import './Navbar.css'
 import img from '../assets/Hack-Vortex-Logo.png'
 
-const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+function Navbar() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+
   return (
-    <>
-      <div className="Navbar">
+    <div>
+        <div className="Navbar">
+
         <header>
           <div className="logo"><img src={img} alt="logo" width={100} /></div>
           <div className={`menu-icon ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
@@ -27,11 +31,10 @@ const Navbar = () => {
             <a href="#contact">Track</a>
             <a href="#faq">FAQ</a>
           </nav>
-
           <button className='faq-button'><a href='mailto:pritamshil880@gmail.com'>Get in Touch</a></button>
         </header>
       </div>
-    </>
+    </div>
   )
 }
 
